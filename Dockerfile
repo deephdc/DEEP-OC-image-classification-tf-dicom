@@ -105,7 +105,7 @@ RUN git clone -b $branch https://github.com/deephdc/image-classification-tf-dico
     cd ..
 
 # Download network weights
-ENV SWIFT_CONTAINER https://cephrgw01.ifca.es:8080/swift/v1/imagenet-tf/
+ENV SWIFT_CONTAINER https://api.cloud.ifca.es:8080/swift/v1/imagenet-tf/
 ENV MODEL_TAR default_imagenet.tar.xz
 
 #RUN curl --insecure -o ./image-classification-tf-dicom/models/${MODEL_TAR} \
